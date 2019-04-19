@@ -1,13 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>CSharpFastPFORCore</AssemblyName>
-    <PackageId>CSharpFastPFORCore</PackageId>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>BenchmarkCore</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>BenchmarkCore</PackageId>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpFastPFORCore\CSharpFastPFORCore.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Properties\" />
